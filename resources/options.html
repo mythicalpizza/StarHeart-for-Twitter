@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>StarHeart for Twitter</title>
+		<meta charset="utf-8">
+		<link rel="icon" type="image/png" href="icons/favicon.png">
+		<link rel="stylesheet" href="css/options.css">
+		<script type="text/javascript" src="js/storage.js"></script>
+	</head>
+	<body>
+		<div id="sh-options-identifier"></div>
+		<div id="wrapper">
+			<header>
+				<h1 id="sh-title">Starheart Options</h1>
+			</header>
+
+			<main>
+
+				<section id="hr-message">
+					<div class="cool-hr"></div>
+					<span class="options-message" id="message">&nbsp;</span>
+				</section>
+
+				<section>
+					<h2 class="options-subheading">Replace Text Instances</h2>
+					<div class="indent replace-text-options">
+						<label for="replace-text-twitter">Twitter</label>
+						<input type="checkbox" class="save" id="replace-text-twitter">
+
+						<label for="replace-text-tweetdeck">Tweetdeck</label>
+						<input type="checkbox" class="save" id="replace-text-tweetdeck">
+					</div>
+				</section>
+
+				<section>
+					<h2 class="options-subheading">Replace Heart Instances</h2>
+					<div class="indent replace-heart-options">
+						<label for="replace-heart-twitter">Twitter</label>
+						<input type="checkbox" class="save" id="replace-heart-twitter">
+
+						<label style="display: none;" for="replace-heart-tweetdeck">Tweetdeck</label>
+						<input type="checkbox" style="display: none;" class="save" id="replace-heart-tweetdeck">
+					</div>
+				</section>
+
+				<section>
+					<h2 class="options-subheading">Fix Twitter Images</h2>
+					<div class="indent fix-image-options">
+						<label for="fix-image-twitter">Twitter</label>
+						<input type="checkbox" class="save" id="fix-image-twitter">
+					</div>
+				</section>
+
+				<section>
+					<h2 class="options-subheading">Tweetdeck Specific</h2>
+					<label for="td-refresh-rate">Refresh Rate</label>
+					<input type="range" min="0" max="15" class="save" id="td-refresh-rate">
+					<span id="tdrr-int">3</span>
+				</section>
+
+				<section>
+					<h2 class="options-subheading">Reset</h2>
+					<button type="button" id="reset-prefs">Reset all preferences to default</button>
+				</section>
+			</main>
+
+			<footer>
+				
+			</footer>
+		</div>
+	</body>
+</html>
