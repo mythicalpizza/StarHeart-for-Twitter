@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" style="min-width: 30em;">
+  <head>
+    <title>sh-config</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/config.css" media="screen" type="text/css">
+    <script type="text/javascript" src="scripts/locale.js"></script>
+    <script type="text/javascript" src="scripts/prefs.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="sh-options-identifier">&nbsp;</div>
+      <header>
+        <h1 id="sh-quick-config-text">StarHeart Quick-Config</h1>
+        <img src="images/gears.png" id="gears" alt="Gears" height="75" width="75" />
+      </header>
+
+      <main>
+
+        <section>
+          <p id="sh-tweak-notice-text">StarHeart has several custom tweaks built-in, which you can enable at your leisure. Please note that each tweak enabled impacts page load speed slightly.</p>
+        </section>
+
+        <section>
+          <h2 id="sh-default-language-text">Default Language</h2>
+
+          <label for="starheart-language"><!--Select Language--></label>
+          <select id="starheart-language">
+            <option id="en_us" value="en_us">English (US)</option>
+            <option id="en_uk" value="en_uk">English (UK)</option>
+            <option id="es" value="es">Spanish</option>
+            <option id="de" value="de">German</option>
+            <option id="fr" value="fr">French</option>
+            <option id="it" value="it">Italian</option>
+          </select>
+        </section>
+
+        <section>
+          <h2 id="sh-replace-text-text">Enable/Disable Text Replacement</h2>
+
+          <p id="replace-text-desc">
+            Note: this setting significantly affects page load time.
+          </p>
+
+          <label for="twitter-txt">Twitter</label>
+          <br />
+          <input type="checkbox" id="twitter-txt">
+          <br />
+          <label for="tweetdeck-txt">Tweetdeck</label>
+          <br />
+          <input type="checkbox" id="tweetdeck-txt">
+          <br />
+          <br />
+          <label for="tweetdeck-refresh-rate">Tweetdeck Update Interval</label>
+          <br />
+          <div id="tweetdeck-refresh-wrap">
+            <input type="range" id="tweetdeck-refresh-rate" min="0" max="10" value="3">
+            <span id="tweetdeck-refresh-counter">3</span>
+          </div>
+          <p id="tweetdeck-refresh-warning" style="margin-left: 2em;">
+            Adjust how frequently Tweetdeck checks to replace text. Try and keep the number in the green for the best performance.
+          </p>
+        </section>
+
+        <section>
+          <h2 id="sh-replace-hearts-text">Replace Hearts with Stars</h2>
+
+          <label for="twitter-addstars">Twitter</label>
+          <br />
+          <input type="checkbox" id="twitter-addstars">
+          <br />
+          <label for="tweetdeck-addstars">Tweetdeck</label>
+          <br />
+          <input type="checkbox" id="tweetdeck-addstars">
+        </section>
+
+        <section>
+          <h2 id="sh-hide-retweets-text">Hide Retweets</h2>
+
+          <label for="hide-retweets-twitter">Twitter</label>
+          <br />
+          <input type="checkbox" id="hide-retweets-twitter">
+          <br />
+          <label for="hide-retweets-tweetdeck">Tweetdeck</label>
+          <br />
+          <input type="checkbox" id="hide-retweets-tweetdeck">
+        </section>
+
+        <section>
+          <h2 id="sh-round-icons-text">Round Icons</h2>
+
+          <label for="round-icons-twitter">Twitter</label>
+          <br />
+          <input type="checkbox" id="round-icons-twitter">
+          <br />
+          <label for="round-icons-tweetdeck">Tweetdeck</label>
+          <br />
+          <input type="checkbox" id="round-icons-tweetdeck">
+        </section>
+
+        <section>
+          <h2 id="sh-twitter-exclusives-text">Twitter.com Exclusive Settings</h2>
+
+          <label for="remove-moments"><span id="sh-remove-moments-text">Remove Twitter Moments</span></label>
+          <br />
+          <input type="checkbox" id="remove-moments">
+          <br />
+          <label for="remove-who-to-follow"><span id="sh-remove-who-to-follow-text">Remove "Who To Follow" Suggestions</span></label>
+          <br />
+          <input type="checkbox" id="remove-who-to-follow">
+          <br />
+          <label for="remove-trends"><span id="sh-remove-trends-text">Remove Trends</span></label>
+          <br />
+          <input type="checkbox" id="remove-trends">
+        </section>
+      </main>
+
+      <footer>
+        <button type="button" id="resetbutton"><span id="sh-reset-settings-button">Reset to Default Settings</span></button>
+      </footer>
+    </div>
+  </body>
+</html>

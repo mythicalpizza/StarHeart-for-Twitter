@@ -1,0 +1,120 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+body {
+  min-width: 30em;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  color: #55acee;
+}
+
+img {
+  max-width: 100%;
+}
+
+#wrapper {
+  width: 90%;
+  display: block;
+  margin: auto;
+}
+
+#gears {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+section label, section input[type="checkbox"] {
+  margin-left: 2em;
+  cursor: pointer;
+}
+
+section p {
+  margin-left: 1em;
+}
+
+section select {
+  cursor: pointer;
+}
+
+.help:hover {
+  cursor: help;
+}
+
+select {
+  padding: 1px 5px 1px 5px;
+  border-radius: 15px;
+}
+
+#sh-tweak-notice-text {
+  font-size: 0.9em;
+}
+
+#resetbutton {
+  display: block;
+  margin: 0 auto 0 auto;
+  border: none;
+  background-color: #55acee;
+  border-radius: 0;
+  padding: 5px;
+  color: #fff;
+}
+
+#resetbutton:hover {
+  box-shadow: inset 1px 1px 1px #000;
+  cursor: pointer;
+}
+
+#tweetdeck-refresh-wrap {
+  border-radius: 15px;
+  line-height: 1.3em;
+  margin-left: 2.2em;
+}
+
+#tweetdeck-refresh-wrap input[type="range"], #tweetdeck-refresh-wrap span {
+  display: inline-block;
+  margin: 0 3em 0 0;
+  vertical-align: middle;
+}
+
+#tweetdeck-refresh-counter {
+  font-weight: bold;
+}
+
+.tweetdeck-refresh-disabled {
+  opacity: 0.3;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: solid 1px #55acee;
+  margin-top: -7px;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background: #55acee;
+  height: 2px;
+}
+
+/*Color Classes for Tweetdeck refresh rate text*/
+.tdrrc-red {
+  color: #ff0000;
+}
+
+.tdrrc-orange {
+  color: #ff6600;
+}
+
+.tdrrc-yellow {
+  color: #ffcc00;
+}
+
+.tdrrc-green {
+  color: #009900;
+}

@@ -1,0 +1,49 @@
+{
+	"manifest_version": 2,
+	"name": "StarHeart for Twitter/Tweetdeck",
+	"short_name": "StarHeart",
+	"version": "2.0.4",
+	"description": "Bring back the classic Fav Star you know and love on Twitter and Tweetdeck.",
+	"author": "Kyle Hickey",
+	"offline_enabled": true,
+	"permissions": [
+		"storage"
+	],
+	"browser_action": {
+    "default_icon": "AppIcon-48.png",
+    "default_popup": "resources/config.html",
+		"default_title": "Configure StarHeart"
+  },
+	"icons":{
+		"16": "AppIcon-16.png",
+		"24": "AppIcon-24.png",
+		"32": "AppIcon-32.png",
+		"48": "AppIcon-48.png",
+		"64": "AppIcon-64.png"
+	},
+	"web_accessible_resources": [
+	    "resources",
+			"resources/*",
+			"resources/scripts/*",
+			"resources/css/*",
+			"resources/fonts/*",
+			"resources/images/*",
+			"*.png",
+	    "*.ttf",
+	    "*.eot",
+	    "*.woff",
+			"*.css"
+    ],
+	"content_scripts": [
+	    {
+	        "matches": ["http://www.twitter.com/*", "https://www.twitter.com/*", "http://twitter.com/*", "https://twitter.com/*", "http://www.tweetdeck.twitter.com/*", "https://www.tweetdeck.twitter.com/*", "http://tweetdeck.twitter.com/*", "https://tweetdeck.twitter.com/*" ],
+	        "js": ["resources/scripts/jquery-3.1.0.slim.min.js", "resources/scripts/initSH.js", "resources/scripts/prefs.js", "resources/scripts/locale.js", "resources/scripts/mutations.js"],
+					"run_at": "document_end"
+	    }
+	],
+  	"options_page": "resources/options.html",
+		"background": {
+	      "scripts": ["resources/scripts/background.js"],
+				"persistent": false
+	  	}
+}

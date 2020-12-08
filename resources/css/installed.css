@@ -1,0 +1,99 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+html {
+  margin: 0;
+  height: 100%;
+}
+
+body{
+  background-color: #55acee;
+  margin: 0;
+  height: 100%;
+  box-shadow: 0 0 30px 30px #55acee;
+  padding-top: 2em;
+}
+
+img {
+  max-width: 100%;
+}
+
+section {
+  width: 75%;
+  display: block;
+  margin: 0 auto 1.5em auto;
+}
+
+a {
+  color: #55acee;
+}
+
+footer {
+  margin-top: 3em;
+}
+
+/*Used for layout styling*/
+/*body, #wrapper, header, main, section, footer, p, h1, h2, h3, h4, h5, h6, span, form, div {
+  border: solid 1px #ff0000;
+}*/
+
+#wrapper {
+  box-shadow: 0 0 30px 30px #fff;
+  background-color: #fff;
+  width: 90%;
+  text-align: center;
+  color: #000;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  display: block;
+  margin: auto;
+}
+
+#sh-title {
+  margin-bottom: 5px;
+}
+
+#sh-slogan {
+  font-size: 0.95em;
+}
+
+.cool-hr {
+  margin: 1em auto 3em auto;
+  display: block;
+  width: 75%;
+  height: 3px;
+  background-color: #55acee;
+  box-shadow: inset 0 0 0.5px 0.5px #fff;
+  border-radius: 25%;
+}
+
+.example-section {
+  width: 75%;
+  display: block;
+  margin: auto;
+}
+
+.example {
+  width: 45%;
+  display: inline-block;
+}
+
+.example img {
+  margin-top: 1.5em;
+}
+
+.tweaks {
+  text-align: justify;
+  margin-top: 3em;
+  max-width: 45%;
+}
+
+.tweaks ul {
+  list-style-type: none;
+}
+
+.tweaks ul li {
+  margin-bottom: 2em;
+}
+
+.tweak-bold {
+  font-weight: bold;
+}
